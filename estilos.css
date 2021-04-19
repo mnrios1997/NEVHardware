@@ -1,0 +1,173 @@
+body{
+	background: white;
+	margin:0px;
+	padding: 0px;
+	box-sizing: border;
+	position: relative;
+
+}
+.iconoTienda > img{
+	width: 50%;
+	height: 100%;
+
+}
+.iconoTienda{
+	display: flex;
+	justify-content: flex-start;
+	width: 30%;
+
+	flex-grow: 1;
+}
+.buscador{
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items : center;
+	flex-grow:7;
+}
+
+.carritoItems{
+
+	flex-grow: 3;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	text-decoration: none;
+	color:black;
+
+}
+.carritoItems > div{
+	width: 18px;
+	height: 18px;
+	border-radius: 25px;
+	background: red;
+	color:white;
+}
+header{
+	background-color: white;
+	width: 100%;
+}
+.headerArriba{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.menu{
+	border:1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	background: orange;
+}
+nav > a{
+	padding: 10px;
+	margin:10px;
+	font-size: 25px;
+	text-decoration:none;
+	color:white;
+	border-left: 1px solid white;
+}
+
+input{
+	height: 25px;
+	margin-left: 5px;
+	width: 70%;
+}
+
+
+.btnBuscar{
+	height: 25px;
+	margin-left: 5px; 
+}
+.slider{
+	height: 400px;
+	position: relative;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+.slider > img{
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	opacity:0;
+	transition:opacity 1.5s;
+}
+
+.slider::first-child{
+	opacity: 1;
+}
+.slider > img:target{
+	opacity: 1;
+}
+
+.numeros{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	
+}
+.numeros > a{
+	background: gray;
+	padding: 10px;
+	border-radius: 25px;
+	color:white;
+	text-decoration: none;
+	margin: 10px;
+}
+
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 5px;
+	background:gray;
+
+}
+footer > div{
+	width: 33%;
+	border:1px solid black;
+}
+.redes{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap:wrap;
+	border-left: 1px solid white;
+}
+.iconosFooter{
+	margin:10px;
+	font-size:30px;
+}
+
+.contacto-ubicacion{
+	text-align: center;
+}
+
+.enlacesFooter{
+	text-align: center;
+}
+
+.enlacesFooter >a{
+	color:white;
+}
+.redes >a{
+	color:white;
+}
