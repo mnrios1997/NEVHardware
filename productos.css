@@ -168,7 +168,6 @@ div > h3{
 	flex-wrap:wrap;
 	justify-content: center;
 	text-align: center;
-	align-items: center;
 	background: gray;
 	width: 300px;
 }
@@ -176,7 +175,17 @@ div > h3{
 
 .verdes{
 	padding: 5px;
-	background: green;
+	background: blue;
 	margin:5px;
-	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	
+	
+
+}
+.imagencita{
+	width: 30px;
+	height: 30px;
 }
