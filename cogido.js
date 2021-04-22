@@ -1,11 +1,11 @@
 let selectorCarrito = document.querySelector(".carrito"); //SELECCIONO LA CAJA DEL CARRITO
 let catalogo = document.querySelector(".contenedorCatalogo") //selecciono al catalogo entero
 
-let selectorBtnAgregar = catalogo.getElementsByTagName("div"); //getElementsByTagName me duelve todos los div que posee catalogo
+let selectorProducto = catalogo.getElementsByTagName("div"); //getElementsByTagName me duelve todos los div que posee catalogo
 let producto = [];
 let btnAgregar = [];
-for (let i = 0; i < selectorBtnAgregar.length; i++) {
-    producto[i] = selectorBtnAgregar[i]; //dentro de cada posicion del arreglo producto, guardo un elemento div del catalogo(osea un div producto). Ahi cree dos arreglos creo que se puede optimizar un poco mas y remover un arreglo y dejar uno
+for (let i = 0; i < selectorProducto.length; i++) {
+    producto[i] = selectorProducto[i]; //dentro de cada posicion del arreglo producto, guardo un elemento div del catalogo(osea un div producto). Ahi cree dos arreglos creo que se puede optimizar un poco mas y remover un arreglo y dejar uno
     btnAgregar[i] = producto[i].querySelector(".btn-agregar"); //ahora en cada posicion btnAgregar guardo el o los botones que tenga el div de prodcuto. Si vos haces un console log del btnAgragar te tiene que devolver un arreglo pero de elementos de tipo button.
 }
 
