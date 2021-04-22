@@ -23,7 +23,10 @@ for (let i = 0; i < todosLosProductos.length; i++) {
     precioTodosLosProductos[i].innerHTML = `$ ${precioRedondeado}`
     console.log(precioTodosLosProductos[i]);
 }
-//console.log(btnAgregar);
+//seleccionar carrito de compras
+let cantidadEnCarrito = document.querySelector(".incrementador-carrito");
+let incremento = 0;
+cantidadEnCarrito.innerHTML = `${incremento}`
 
 for (let i = 0; i < btnAgregar.length; i++) {
     //con el for recorro el arreglo de botones y le doy un evento cada boton de cada producto.
@@ -41,5 +44,9 @@ for (let i = 0; i < btnAgregar.length; i++) {
         console.log(nombre);
         crear.classList.add("verdes"); //al elemento que cree arriba le añado  una clase (verdes) como si lo hiciera en el html. Eso para probar si anda. Pero sirve para ir modificando el css de las cajitas que se van agregando a carrito
         selectorCarrito.appendChild(crear); //aca solo lo que hago es agregar el div nuevo a la caja carrito
+
+        incremento++;
+        console.log(incremento);
+        cantidadEnCarrito.innerHTML = `${incremento}`
     });
 }
